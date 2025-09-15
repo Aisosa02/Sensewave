@@ -1,14 +1,28 @@
 # Sensewave
 
-A cross-platform computer vision prototype that connects a device camera to a Python backend running MiDaS AI for depth perception and hazard visualization.
+🚧 A hackathon prototype for **hazard detection and reporting** using AI, AR, and blockchain.
 
-## Structure
-- `python/tests/` → Standalone Python scripts for testing camera + MiDaS depth.
-- `python/server/` → Flask backend that receives frames from devices and returns overlays.
-- `unity/` → Unity frontend C# script that streams camera frames to backend and displays depth feed.
-- `docs/` → Setup instructions.
+## Contents
 
-## Quick Start
-1. Install Python dependencies:
-   ```bash
-   pip install -r requirements.txt
+### 1. Python + Unity Prototype
+- `python/tests/` → Camera + MiDaS depth test scripts
+- `python/server/` → Flask server that receives frames & applies AI
+- `unity/` → Unity C# script to capture camera and overlay hazards
+
+### 2. Web Demo (Hackathon Pivot)
+- `web-demo/index.html` → A browser-based demo that:
+  - Uses camera + JavaScript to simulate pothole detection
+  - Captures **geolocation + timestamp**
+  - Demonstrates **Solana blockchain upload** of pothole reports
+
+### 3. Presentation
+- `presentation/MotionHackers.pptx` → Hackathon pitch deck
+
+---
+
+## How to Run
+
+### Python/Unity Prototype
+```bash
+pip install -r requirements.txt
+python python/server/flask_server.py
