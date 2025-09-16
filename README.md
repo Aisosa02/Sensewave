@@ -26,3 +26,17 @@
 ```bash
 pip install -r requirements.txt
 python python/server/flask_server.py
+
+Team
+
+MotionHackers @ MotionHack 2025
+
+👨‍💻 Computer Vision (Python/AI)
+
+🎮 Unity AR Developer
+
+🌐 Web + Blockchain Developer
+
+⭐ Next Steps
+
+Improve hazard classification (train
